@@ -1,0 +1,15 @@
+version: "3"
+services:
+        ubuntu:
+                image: ubuntu_lpic:18.04
+                build: ./ubuntu
+                container_name: ubuntu_lpic
+                stdin_open: true
+                tty: true
+
+        centos:
+                image: centos_lpic:7
+                build: ./centos
+                container_name: centos_lpic
+                stdin_open: true
+                tty: true
